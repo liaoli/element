@@ -2,8 +2,10 @@
 
 ## element 的生命周期
 1.Framework调用Widget.createElement 创建Element实例，element
+Element createElement();
 
 2.FrameWork调用element.mount(parentElement,newSlot)，
+void mount(Element? parent, Object? newSlot)
 mount方法首先调用element所对应的widget的CreateRenderObject()方法
 创建与element相关联的RenderObject对象，然后用element.attachRenderObject()
 方法将element.renerObject添加到渲染树中插槽指定的位置。(这一步不是必须的，一般发
