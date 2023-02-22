@@ -77,7 +77,8 @@ WidgetsFlutterBinding.ensureInitialized()
 参数app是一个widget，他是flutter应用启动后的第一个组件。而
 WidgetsFlutterBinding正是绑定widget框架和Flutter引擎的桥梁，
 定义如下：
-
+   
+##WidgetsFlutterBinding
 /// * [GestureBinding], which implements the basics of hit testing.
 /// * [SchedulerBinding], which introduces the concepts of frames.
 /// * [ServicesBinding], which provides access to the plugin subsystem.
@@ -228,3 +229,33 @@ RenderObjectToWidgetElement<T> attachToRenderTree(BuildOwner owner, [RenderObjec
 最后一行会调用WidgetsFlutterBinding实例的scheculeWarmUpFrame()方法，该方法的实现在SchedulerBinding中，
 它被调用后立即进行一次绘制，在此绘制结束前，该方法会锁定事件分发，
 也就是说在本次绘制结束之前，flutter将不会响应各种事件，这可以保证在绘制过程中不会再触发新的绘制
+
+20230222 - 20230322
+        
+# Flutter计划
+
++ flutter 底层原理
+    - 启动，绘制，渲染，更新  1周 
+    - provider 原理        1周
+    - getX 原理           1周
+    - flutter 原生混合开发   1周
+    - flutter 插件开发      1周
+# go    
++ redis实战  11章 2周
++ go语言高级编程 7章 1周
+  - Marker character change forces new list start:
+    * Ac tristique libero volutpat at
+    + Facilisis in pretium nisl aliquet
+    - Nulla volutpat aliquam velit
+# 操作系统
++ 汇编语言 
++ 操作系统公开课哈工大
+
+# 计算机网络 
++ 哈工大的计算机网络课程
++ 计算机网络——自顶向下方法
++ 《图解 HTTP》
++ 《网络是怎样连接的》 
+# 数据库   
++ 北京师范大学的《数据库系统原理》
+  
